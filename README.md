@@ -3,7 +3,7 @@ Agenda de contatos utilizando a MEAN stack.
 
 A MEAN stack é composta pelo MongoDB, Express, Node.js e AngularJS.
 
-## Passo a passo de como criar uma aplicação Express
+### Passo a passo de como criar uma aplicação Express
 
 1. Ter Git instalado
 2. Ter o Node.js instalado
@@ -13,7 +13,7 @@ A MEAN stack é composta pelo MongoDB, Express, Node.js e AngularJS.
 6. Crie o script com o nome: 'server.js'
 7. Para executar digite o comando 'node server'
 
-## Utilizando AngularJS
+### Utilizando AngularJS
 
 1. Importação do AngularJS no body do index.html
 2. Criar ng-app
@@ -24,7 +24,7 @@ A MEAN stack é composta pelo MongoDB, Express, Node.js e AngularJS.
 7. Inserir Bootstrap (opcional)
 8. Criar conteúdo da aplicação
 
-## Instalação MongoDB e mongojs
+### Instalação MongoDB e mongojs
 
 1. Baixar e instalar o mongodb no computador
 2. Criar as pastas necessárias para a execução do banco
@@ -32,29 +32,29 @@ A MEAN stack é composta pelo MongoDB, Express, Node.js e AngularJS.
 4. Digitar 'npm install nodejs' para instalar o mongo js ("os arquivos da instalação se encontrarão dentro da pasta node_modules")
 5. Adicionar as variáveis de configuração de comunicação do node-express com o mongo no header do arquivo server.js
 
-## Criação das entradas do usuário na aplicação
+### Criação das entradas do usuário na aplicação
 
 1. Criar os inputs no index.html
 2. Criar no controller.js o método 'addContact' que terá como funcionalidade adicionar os contatos
 3. Criar no server.js o get e post do método adicionar
 
-## Instalação body-parser
+### Instalação body-parser
 
 1. Abrir a raiz do projeto dentro do terminal
 2. Digitar 'npm install body-parser' para instalar body-parser
 3. Adicionar as variáveis de configuração de comunicação do body-parser no header do arquivo server.js
 
-## Inserção no mongodb
+### Inserção no mongodb
 
 1. Declarar dentro do método post a inserção da informação que será gravada no banco
 
-## Refresh
+### Refresh
 
 1. Refresh adicionado para atualizar os contatos a cada inserção
 2. Criar a variável 'refresh' que recebe o GET da agenda, realizando assim a atualização
 3. A cada ação realizada o refresh será chamado
 
-## Deletar, editar e atualizar
+### Deletar, editar e atualizar
 
 1. Criar um método para cada ação
 2. Todas as ações são criadas através da manipulação da id do mongo

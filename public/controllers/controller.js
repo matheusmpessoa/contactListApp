@@ -1,4 +1,5 @@
 var myApp = angular.module('myApp', []);
+
 myApp.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
     console.log("Hello World from controller");
 
@@ -16,6 +17,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
         console.log($scope.contact);
         $http.post('/contactlist', $scope.contact).success(function (response) {
             console.log(response);
+            console.log("Contato adicionado");
             refresh();
         });
     };
@@ -23,6 +25,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.remove = function (id) {
         console.log(id);
         $http.delete('/contactlist/' + id).success(function (response) {
+            console.log("Contato removido");
             refresh();
         });
     };
@@ -30,6 +33,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.edit = function (id) {
         console.log(id);
         $http.get('/contactlist/' + id).success(function (response) {
+            console.log("Contato editado");
             $scope.contact = response;
         });
     };
@@ -37,6 +41,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.update = function () {
         console.log($scope.contact._id);
         $http.put('/contactlist/' + $scope.contact._id, $scope.contact).success(function (response) {
+            console.log("Contato atualizado");
             refresh();
         })
     };
@@ -45,4 +50,8 @@ myApp.controller('AppCtrl', ['$scope', '$http', function ($scope, $http) {
         $scope.contact = "";
     }
 
+    /* Filter contatos */
+    $scope.filterFunction = function (element) {
+        return element.name.match(/^Ma/) ? true : false;
+    };
 }]);
