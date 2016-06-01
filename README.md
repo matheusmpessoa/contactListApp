@@ -9,7 +9,7 @@ Agenda de contatos utilizando a MEAN stack.
 4. Abrir o diretorio através do 'Git bash'
 5. Digite: npm install express
 6. Crie o script com o nome: 'server.js'
-7. Para executar: node server
+7. Para executar digite o comando 'node server'
 
 ## Utilizando AngularJS
 
@@ -21,3 +21,23 @@ Agenda de contatos utilizando a MEAN stack.
 6. Criar controller
 7. Inserir Bootstrap (opcional)
 8. Criar conteúdo da aplicação
+
+## Instalação MongoDB e mongojs
+
+1. Baixar e instalar o mongodb no computador
+2. Criar as pastas necessárias para a execução do banco
+3. Abrir a raiz do projeto dentro do terminal
+4. Digitar 'npm install nodejs' para instalar o mongo js ("os arquivos da instalação se encontrarão dentro da pasta node_modules")
+5. Adicionar as variáveis de configuração de comunicação do node-express com o mongo no header do arquivo server.js
+
+## Criação das entradas do usuário na aplicação
+
+1. Criar os inputs no index.html
+2. Criar no controller.js o método 'addContact' que terá como funcionalidade adicionar os contatos
+3. Criar no server.js o get e post do método adicionar
+
+## Instalação body-parser
+
+1. Abrir a raiz do projeto dentro do terminal
+2. Digitar 'npm install body-parser' para instalar body-parser
+3. Adicionar as variáveis de configuração de comunicação do body-parser no header do arquivo server.js

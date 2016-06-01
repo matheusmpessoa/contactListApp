@@ -8,4 +8,8 @@ myApp.controller('AppCtrl', ['$scope','$http', function($scope, $http){
         $scope.contactlist = response;
     });
 
+    $scope.addContact = function() {
+        console.log($scope.contact);
+        $http.post('/contactlist', $scope.contact);
+    };
 }]);
